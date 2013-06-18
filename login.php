@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 use po\MyPoA,
     po\MyPoB;
 
@@ -13,10 +13,11 @@ if(isset($sbt))
 
 	$eee = $em->createQuery('SELECT u FROM po\MyPoA u where u.name=\''.$login.'\' and u.password=\''.$pwd.'\'');
 	$users = $eee->getArrayResult();
-	var_dump($users);
 	if($users)
 	{
-		echo "xxxdfd";
+		$_SESSION['wt']='wt';
+		Header("Location:home.php");
+
 	
 	}
 	else
@@ -34,9 +35,14 @@ if(isset($sbt))
 	//$em->persist($b);
 	//$em->flush();
 }
+else
+{
 ?>
 <form method="post" action="<?=$PHP_SELF?>">
 <p>name:<input type="text" name="login" /></p>
 <p>pawd:<input type="password" name="pwd" /></p>
 <p><input name="sbt" type="submit" value="submit" /></p>
 </form>
+<?
+}
+?>
