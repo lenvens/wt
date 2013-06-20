@@ -1,6 +1,6 @@
 <?php
 /*
- * 获取url通过php
+ * 鑾峰彇url閫氳繃php
  */
 Header("Content-type:text/html;charset=utf-8");
    $url="www.baidu.com";
