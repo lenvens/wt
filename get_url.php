@@ -21,7 +21,7 @@ Header("Content-type:text/html;charset=utf-8");
      {
        ob_flush();
        flush();
-       $content.=fgets($fp,128);  //取出文件中的一行赋给变量$content
+       $content.=fgets($fp,128);  
        ob_end_clean();
      }
      fclose($fp);
