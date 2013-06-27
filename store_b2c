@@ -1,0 +1,151 @@
+<?
+
+if(!isset($B2C_SHOP_ID))
+{
+	$B2C_SHOP_ID=$SHOP_ID;
+}
+if(isset($SHOP_ID))
+{
+setcookie("B2C_SHOP_ID", $SHOP_ID, time()+(30*24*3600),"/","leyou.com.cn");
+}
+if(isset($B2C_SHOP_ID)&&isset($SHOP_ID))
+{
+setcookie("B2C_SHOP_ID", $SHOP_ID, time()+(30*24*3600),"/","leyou.com.cn");
+}
+
+
+if(isset($B2C_SHOP_ID)&&$HTTP_SERVER_VARS['SERVER_NAME']=='storedevel.beijing.leyou.com')
+{
+include_once("${DOCUMENT_ROOT}/include/b2c_session_check");
+include_once("$DOCUMENT_ROOT/include/head/head_store");
+include_once("${DOCUMENT_ROOT}/include/image_root");
+include_once("${DOCUMENT_ROOT}/include/func/store.config.php");
+
+$area_code=getAreaCode($B2C_SHOP_ID);
+//header("Location:/upload/store_b2c");
+}
+else
+{
+	//header("Location:http://www.leyou.com.cn/");
+
+
+}
+?>
+<link rel="stylesheet" type="text/css" href="mod1.css"/>
+<div style="background:url(/upload/config_664_43_2_2003-2-16.jpg); padding-bottom:32px;">
+<div id="modtopbnr"><a href="config_664_43_2_2003-2-16.jpg"><img src="<?=$images_root?>/upload/config_664_43_1_2003-2-16.jpg" /></a></div><div class="tit1"><img src="<?=$images_root?>/upload/config_664_41_1_2003-2-22.jpg" /></div><div style=" width:980px; height:auto; background: url(/upload/config_664_41_2_2003-2-18.gif); margin:0 auto;"><div class="Merchandise"><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/4310005300"target="_blank"><img src="http://image.leyou.com.cn/images_db/88/a6/88a6600376d515fbd330ba41a85bad41.JPG" width="160" height="160" /></a><a href="/product/single/4310005300" target="_blank" class="modtxt">合生元--孕产妇DHA咀嚼丸</a><p class="sale">会员价:<? echo get_sale_price('4310005300'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4310005300">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=366588">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/4310005400"target="_blank"><img src="http://image.leyou.com.cn/images_db/e3/7a/e37a7397286566c27caa39f59864e9a9.JPG" width="160" height="160" /></a><a href="/product/single/4310005400" target="_blank" class="modtxt">合生元--儿童DHA咀嚼丸</a><p class="sale">会员价:<? echo get_sale_price('4310005400'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4310005400">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=366589">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/4310005500"target="_blank"><img src="http://image.leyou.com.cn/images_db/ed/05/ed0516739847025666c66dbe736f22d5.JPG" width="160" height="160" /></a><a href="/product/single/4310005500" target="_blank" class="modtxt">合生元--儿童DHA软胶囊</a><p class="sale">会员价:<? echo get_sale_price('4310005500'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4310005500">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=366590">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><span class='shouwan'  title='抱歉，已售完！'></span><a href="/product/single/4310005600"target="_blank"><img src="http://image.leyou.com.cn/images_db/00/bf/00bfa38737b8fc1b887808ab326d80c1.JPG" width="160" height="160" /></a><a href="/product/single/4310005600" target="_blank" class="modtxt">合生元--妈妈微囊乳钙咀嚼片</a><p class="sale">会员价:<? echo get_sale_price('4310005600'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4310005600">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=366591">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><span class='shouwan'  title='抱歉，已售完！'></span><a href="/product/single/4310005700"target="_blank"><img src="http://image.leyou.com.cn/images_db/be/32/be32e51915f375462c436c242355b592.JPG" width="160" height="160" /></a><a href="/product/single/4310005700" target="_blank" class="modtxt">合生元--儿童微囊乳钙咀嚼片(水果味)</a><p class="sale">会员价:<? echo get_sale_price('4310005700'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4310005700">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=366592">收藏</a></span></p>
+  </div><div class="clear"></div><div class="list">
+    	<p class="long"></p><p class="round"></p><span class='shouwan'  title='抱歉，已售完！'></span><a href="/product/single/4310005800"target="_blank"><img src="http://image.leyou.com.cn/images_db/de/aa/deaa33543880bb9adc3167baf24f940c.JPG" width="160" height="160" /></a><a href="/product/single/4310005800" target="_blank" class="modtxt">合生元--儿童微囊乳钙咀嚼片(奶味)</a><p class="sale">会员价:<? echo get_sale_price('4310005800'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4310005800">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=366593">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><span class='shouwan'  title='抱歉，已售完！'></span><a href="/product/single/4410000600"target="_blank"><img src="http://image.leyou.com.cn/images_db/1c/1d/1c1deb1718f5d2147ac84b88ffc6015b.JPG" width="160" height="160" /></a><a href="/product/single/4410000600" target="_blank" class="modtxt">智灵通--迪儿软胶囊(270粒)</a><p class="price">市场价：￥1,224.74元</p><p class="sale">会员价:<? echo get_sale_price('4410000600'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4410000600">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=160158">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/6030RA0200"target="_blank"><img src="http://image.leyou.com.cn/images_db/b5/5d/b55dd1749d046ee8dee5028b4408b706.JPG" width="160" height="160" /></a><a href="/product/single/6030RA0200" target="_blank" class="modtxt">贝亲--温奶器</a><p class="price">市场价：￥178.00元</p><p class="sale">会员价:<? echo get_sale_price('6030RA0200'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=6030RA0200">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=59443">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/6580GLT100"target="_blank"><img src="http://image.leyou.com.cn/images_db/55/c4/55c4dcdc8849d533e0185e805a4ed389.JPG" width="160" height="160" /></a><a href="/product/single/6580GLT100" target="_blank" class="modtxt">格朗--调乳器</a><p class="price">市场价：￥288.00元</p><p class="sale">会员价:<? echo get_sale_price('6580GLT100'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=6580GLT100">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=117655">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/6580GLX100"target="_blank"><img src="http://image.leyou.com.cn/images_db/88/06/8806b357c38f3c8c08cead6adb7c2101.JPG" width="160" height="160" /></a><a href="/product/single/6580GLX100" target="_blank" class="modtxt">格朗--GLX-1消毒锅</a><p class="price">市场价：￥332.00元</p><p class="sale">会员价:<? echo get_sale_price('6580GLX100'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=6580GLX100">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=40708">收藏</a></span></p>
+  </div><div class="clear"></div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/658GLYY900"target="_blank"><img src="http://image.leyou.com.cn/images_db/ef/8a/ef8ab1be8d9281821d5bd119cd090197.JPG" width="160" height="160" /></a><a href="/product/single/658GLYY900" target="_blank" class="modtxt">格朗--微电脑隔水电炖盅</a><p class="price">市场价：￥529.00元</p><p class="sale">会员价:<? echo get_sale_price('658GLYY900'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=658GLYY900">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=305000">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/D91L068900"target="_blank"><img src="http://image.leyou.com.cn/images_db/ff/e4/ffe4eec1498603be2e0e49095247e796.JPG" width="160" height="160" /></a><a href="/product/single/D91L068900" target="_blank" class="modtxt">小白熊--消毒器(多功能)</a><p class="price">市场价：￥398.00元</p><p class="sale">会员价:<? echo get_sale_price('D91L068900'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=D91L068900">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=369994">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/D93NQ12A00"target="_blank"><img src="http://image.leyou.com.cn/images_db/ba/af/baaf5c12a1c4eea7fa6c8280254842cb.JPG" width="160" height="160" /></a><a href="/product/single/D93NQ12A00" target="_blank" class="modtxt">好女人--多功能恒温水壶</a><p class="price">市场价：￥328.00元</p><p class="sale">会员价:<? echo get_sale_price('D93NQ12A00'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=D93NQ12A00">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=374031">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/N586917000"target="_blank"><img src="http://image.leyou.com.cn/images_db/f6/a9/f6a95a527742f3231dc5844ee21d07b1.JPG" width="160" height="160" /></a><a href="/product/single/N586917000" target="_blank" class="modtxt">MAM--哺喂勺(4只)</a><p class="price">市场价：￥32.00元</p><p class="sale">会员价:<? echo get_sale_price('N586917000'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=N586917000">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=209223">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/N586919400"target="_blank"><img src="http://image.leyou.com.cn/images_db/53/87/538728fc77202f003eb7283577294a1c.JPG" width="160" height="160" /></a><a href="/product/single/N586919400" target="_blank" class="modtxt">MAM--防滑碗</a><p class="price">市场价：￥68.00元</p><p class="sale">会员价:<? echo get_sale_price('N586919400'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=N586919400">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=209225">收藏</a></span></p>
+  </div><div class="clear"></div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/N588600100"target="_blank"><img src="http://image.leyou.com.cn/images_db/26/d6/26d67a65077c13f9626fc1d8c38eee1d.JPG" width="160" height="160" /></a><a href="/product/single/N588600100" target="_blank" class="modtxt">MAM--精装新生儿礼盒</a><p class="price">市场价：￥290.00元</p><p class="sale">会员价:<? echo get_sale_price('N588600100'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=N588600100">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=308305">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/N588601800"target="_blank"><img src="http://image.leyou.com.cn/images_db/f7/76/f77643325645729cf3747e447fdb948b.JPG" width="160" height="160" /></a><a href="/product/single/N588601800" target="_blank" class="modtxt">MAM--新生儿大礼盒</a><p class="price">市场价：￥420.00元</p><p class="sale">会员价:<? echo get_sale_price('N588601800'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=N588601800">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=308306">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/897HK76800"target="_blank"><img src="http://image.leyou.com.cn/images_db/95/53/9553d00952e3f6cabd54dc3ddc0ada34.JPG" width="160" height="160" /></a><a href="/product/single/897HK76800" target="_blank" class="modtxt">易简--特级防水理发器HK768</a><p class="price">市场价：￥238.00元</p><p class="sale">会员价:<? echo get_sale_price('897HK76800'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=897HK76800">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=370046">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/897K85II00"target="_blank"><img src="http://image.leyou.com.cn/images_db/3c/55/3c55522376e8d88adc2cbd0424190347.JPG" width="160" height="160" /></a><a href="/product/single/897K85II00" target="_blank" class="modtxt">易简--智慧全能理发器HK85</a><p class="price">市场价：￥278.00元</p><p class="sale">会员价:<? echo get_sale_price('897K85II00'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=897K85II00">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=370045">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/U780000000"target="_blank"><img src="http://image.leyou.com.cn/images_db/47/4a/474a02c324b9a3eb1f6160e652cc6d36.JPG" width="160" height="160" /></a><a href="/product/single/U780000000" target="_blank" class="modtxt">AIRVAX--空气净化器33X2</a><p class="price">市场价：￥1,398.00元</p><p class="sale">会员价:<? echo get_sale_price('U780000000'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=U780000000">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=375958">收藏</a></span></p>
+  </div><div class="clear"></div></div></div><div class="tit1"><img src="<?=$images_root?>/upload/config_664_42_1_2003-2-22.jpg" /></div><div style=" width:980px; height:auto; background: url(/upload/config_664_42_2_2003-2-18.gif); margin:0 auto;"><div class="Merchandise"><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/U380916900"target="_blank"><img src="http://image.leyou.com.cn/images_db/1a/67/1a67b939e7757d7ccbf6540f4021dd04.JPG" width="160" height="160" /></a><a href="/product/single/U380916900" target="_blank" class="modtxt">小泰克--长颈鹿脚踏车</a><p class="price">市场价：￥359.00元</p><p class="sale">会员价:<? echo get_sale_price('U380916900'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=U380916900">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=373686">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/U381523800"target="_blank"><img src="http://image.leyou.com.cn/images_db/44/7f/447fd653a16c349d66c9045b87a12c7b.JPG" width="160" height="160" /></a><a href="/product/single/U381523800" target="_blank" class="modtxt">小泰克--怪兽尘土车</a><p class="sale">会员价:<? echo get_sale_price('U381523800'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=U381523800">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=376591">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><span class='shouwan'  title='抱歉，已售完！'></span><a href="/product/single/U382065200"target="_blank"><img src="http://image.leyou.com.cn/images_db/8f/69/8f69870521ff8304b07763bdf4bd3160.JPG" width="160" height="160" /></a><a href="/product/single/U382065200" target="_blank" class="modtxt">小泰克--敲击乐鼓</a><p class="price">市场价：￥129.00元</p><p class="sale">会员价:<? echo get_sale_price('U382065200'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=U382065200">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=373687">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/U580400500"target="_blank"><img src="http://image.leyou.com.cn/images_db/ea/6f/ea6f055e2288a18d4e6b19ba1494eed3.JPG" width="160" height="160" /></a><a href="/product/single/U580400500" target="_blank" class="modtxt">STALON--波比熊高级舒美爬行垫(加厚)(150*200*1.5)</a><p class="price">市场价：￥528.00元</p><p class="sale">会员价:<? echo get_sale_price('U580400500'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=U580400500">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=370771">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/U590G80000"target="_blank"><img src="http://image.leyou.com.cn/images_db/9f/79/9f7949c060b6af2684da76a46f79414c.JPG" width="160" height="160" /></a><a href="/product/single/U590G80000" target="_blank" class="modtxt">金智--故事机G800</a><p class="price">市场价：￥499.00元</p><p class="sale">会员价:<? echo get_sale_price('U590G80000'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=U590G80000">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=370772">收藏</a></span></p>
+  </div><div class="clear"></div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/U70S158800"target="_blank"><img src="http://image.leyou.com.cn/images_db/c3/b2/c3b2ad94519410e2be584b24b66d2515.JPG" width="160" height="160" /></a><a href="/product/single/U70S158800" target="_blank" class="modtxt">壹百分--米奇造型甜美雪糕机</a><p class="price">市场价：￥198.00元</p><p class="sale">会员价:<? echo get_sale_price('U70S158800'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=U70S158800">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=373835">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/U70S212100"target="_blank"><img src="http://image.leyou.com.cn/images_db/37/0c/370c490315bdbbae784e05ba93507e63.JPG" width="160" height="160" /></a><a href="/product/single/U70S212100" target="_blank" class="modtxt">壹百分--公主造型甜美雪糕机</a><p class="price">市场价：￥198.00元</p><p class="sale">会员价:<? echo get_sale_price('U70S212100'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=U70S212100">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=373836">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/625CE01200"target="_blank"><img src="http://image.leyou.com.cn/images_db/87/be/87beb7131c7f2cc103eb03ceca7423ac.JPG" width="160" height="160" /></a><a href="/product/single/625CE01200" target="_blank" class="modtxt">宝贝第一--安全座椅蓝咪拓普N100升级版CE0120-18KG</a><p class="price">市场价：￥1,298.00元</p><p class="sale">会员价:<? echo get_sale_price('625CE01200'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=625CE01200">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=369082">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/9890161600"target="_blank"><img src="http://image.leyou.com.cn/images_db/2f/91/2f9120d9cd1b1fe0ee47e0d0d7cd0915.JPG" width="160" height="160" /></a><a href="/product/single/9890161600" target="_blank" class="modtxt">妈妈爱--多功能婴儿学步车1616(绿野仙踪)</a><p class="price">市场价：￥688.00元</p><p class="sale">会员价:<? echo get_sale_price('9890161600'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=9890161600">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=368091">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/9890HJ0102"target="_blank"><img src="http://image.leyou.com.cn/images_db/bb/ef/bbefb519849599b7557de7bf0c9a4970.JPG" width="160" height="160" /></a><a href="/product/single/9890HJ0102" target="_blank" class="modtxt">妈妈爱--多功能餐椅HJ01(绿野仙踪)</a><p class="price">市场价：￥998.00元</p><p class="sale">会员价:<? echo get_sale_price('9890HJ0102'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=9890HJ0102">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=368089">收藏</a></span></p>
+  </div><div class="clear"></div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/4737820300"target="_blank"><img src="http://image.leyou.com.cn/images_db/b3/23/b3239c7e6e92413f5dfcdee4f63ce643.JPG" width="160" height="160" /></a><a href="/product/single/4737820300" target="_blank" class="modtxt">好奇--干爽舒适第二代M号箱装120片(网)</a><p class="sale">会员价:<? echo get_sale_price('4737820300'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4737820300">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=328184">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><span class='shouwan'  title='抱歉，已售完！'></span><a href="/product/single/4737830300"target="_blank"><img src="http://image.leyou.com.cn/images_db/2d/67/2d676dc4758afa93cf297dfe2daf701d.JPG" width="160" height="160" /></a><a href="/product/single/4737830300" target="_blank" class="modtxt">好奇--干爽舒适第二代L号箱装100片(网)</a><p class="sale">会员价:<? echo get_sale_price('4737830300'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4737830300">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=328185">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/4737840300"target="_blank"><img src="http://image.leyou.com.cn/images_db/16/05/16056cf42212fba880dd3c0ec7525d6f.JPG" width="160" height="160" /></a><a href="/product/single/4737840300" target="_blank" class="modtxt">好奇--干爽舒适第二代纸尿裤XL号箱装80片(网)</a><p class="sale">会员价:<? echo get_sale_price('4737840300'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4737840300">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=328186">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/4737910300"target="_blank"><img src="http://image.leyou.com.cn/images_db/b2/b8/b2b8cb06e6ef70e0bb5dc435f1d28f29.JPG" width="160" height="160" /></a><a href="/product/single/4737910300" target="_blank" class="modtxt">好奇--干爽舒适第二代纸尿裤S号特大超值装94片(网)</a><p class="sale">会员价:<? echo get_sale_price('4737910300'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4737910300">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=328182">收藏</a></span></p>
+  </div><div class="list">
+    	<p class="long"></p><p class="round"></p><a href="/product/single/4737940300"target="_blank"><img src="http://image.leyou.com.cn/images_db/c0/eb/c0ebc6d9f0b56a4d0ebd4e7148121854.JPG" width="160" height="160" /></a><a href="/product/single/4737940300" target="_blank" class="modtxt">好奇--干爽舒适第二代纸尿裤加XL号特大超值装52片(网)</a><p class="sale">会员价:<? echo get_sale_price('4737940300'); ?>元</p>
+<p><span class="adBuy"><a href="/purchase/cart?add_sku=4737940300">放入购物车</a></span><span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=328183">收藏</a></span></p>
+  </div><div class="clear"></div><div class="clear"></div></div></div></div><?
+$CityArray=array("BJ","TJ","LNSY","SXXA","SCCD");
+if(in_array($area_code,$CityArray))
+{
+include("$DOCUMENT_ROOT/include/foot_$area_code");
+}
+else
+{
+include("$DOCUMENT_ROOT/include/foot_BJ");
+}
+?>
